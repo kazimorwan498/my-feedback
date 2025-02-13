@@ -87,7 +87,7 @@ export default function MyNavbar() {
 
 			<NavbarContent className="sm:hidden" justify="end">
 				<NavbarMenuToggle
-					className="!size-12"
+					className="!size-12 hover:bg-searchText/10 active:bg-searchText/20 transition-colors"
 					aria-label={isMenuOpen ? "Close menu" : "Open menu"}
 				/>
 			</NavbarContent>
@@ -96,28 +96,30 @@ export default function MyNavbar() {
 				style={{ "--navbar-height": "120px", overflow: "hidden" }}
 			>
 				<NavbarMenuItem className="mb-4">
-					<div className="h-auto 400px:h-[51px] w-auto flex flex-col 400px:flex-row items-center justify-center gap-2 p-0 400px:p-1 400px:py-4 rounded-md 400px:rounded-full border-0 400px:border border-accent focus-within:border-primary text-base font-light">
+					<div className="h-auto min-[500px]:h-[51px] w-auto flex flex-col min-[500px]:flex-row items-center justify-center gap-2 p-0 min-[500px]:p-1 min-[500px]:py-4 rounded-md min-[500px]:rounded-full border-0 min-[500px]:border border-accent focus-within:border-primary text-base font-light">
 						<input
 							type="search"
 							placeholder="restaurant, hotel, service...."
-							className="size-full h-[51px] 400px:h-auto bg-transparent px-[19px] text-searchText placeholder:text-searchText outline-0 rounded-full 400px:rounded-none 400px:rounded-tl-full 400px:rounded-bl-full border-2 400px:border-0 400px:border-r border-searchText focus:border-primary"
+							className="size-full h-[51px] min-[500px]:h-auto bg-transparent px-[19px] text-searchText placeholder:text-searchText outline-0 rounded-full min-[500px]:rounded-none min-[500px]:rounded-tl-full min-[500px]:rounded-bl-full border min-[500px]:border-0 min-[500px]:border-r border-searchText focus:border-primary"
 						/>
 						<input
 							type="search"
 							placeholder="Singapore..."
-							className="size-full h-[51px] 400px:h-auto bg-transparent px-[19px] text-searchText placeholder:text-searchText outline-0 rounded-full 400px:rounded-none 400px:rounded-tr-full 400px:rounded-br-full border-2 400px:border-0 border-searchText focus:border-primary"
+							className="size-full h-[51px] min-[500px]:h-auto bg-transparent px-[19px] text-searchText placeholder:text-searchText outline-0 rounded-full min-[500px]:rounded-none min-[500px]:rounded-tr-full min-[500px]:rounded-br-full border min-[500px]:border-0 border-searchText focus:border-primary"
 						/>
-						<Button className="size-full 400px:!size-[43px] !p-0 min-w-[43px] rounded-full bg-primary text-white">
+						<Button className="size-full min-[500px]:!size-[43px] !p-0 min-w-[43px] rounded-full bg-primary text-white">
 							<Search className="size-4 stroke-2" />
-							<span className="400px:hidden">Search</span>
+							<span className="min-[500px]:hidden">Search</span>
 						</Button>
 					</div>
 				</NavbarMenuItem>
 
+				<hr />
+
 				{menuItems.map(({ item, urls }, index) => (
 					<NavbarMenuItem
 						key={index}
-						className="h-[44px] hover:bg-primary/20 px-3 rounded-md"
+						className="h-[44px] hover:bg-primary/10 active:bg-primary/20 px-3 rounded-md"
 					>
 						<Link
 							to={urls}
