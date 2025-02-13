@@ -2,15 +2,14 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import MyNavbar from "./Components/Shared/Navbar";
 import Error from "./Components/Global/Error";
-import HomePage from "./Components/Landing/HomePage/HomePage";
+import Hero from "./Components/Landing/HomePage/Hero";
 
 function App() {
 	return (
 		<BrowserRouter>
+			<MyNavbar />
 			<Routes>
-				<Route path="/" element={<MyNavbar />}>
-					<Route index element={<HomePage />} />
-				</Route>
+				<Route path="/" element={<Hero />} />
 				<Route path="*" element={<Error />} />
 			</Routes>
 		</BrowserRouter>

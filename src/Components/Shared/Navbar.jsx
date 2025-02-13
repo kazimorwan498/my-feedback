@@ -12,22 +12,12 @@ import {
 import { Globe, Logo, Search } from "@/Components/Global/Icon";
 import { Link, useNavigate } from "react-router-dom";
 import MyButtons from "../Global/MyButtons";
+import MobileNavMenuItems from "../../lib/db/MobileNavMenuItems.json";
 
 export default function MyNavbar() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 	const Navigate = useNavigate();
-
-	const menuItems = [
-		{ item: "Dashboard", urls: "/" },
-		{ item: "Explore", urls: "/explore" },
-		{ item: "MyFeedback for business", urls: "/my-feedback-for-business" },
-		{ item: "Profile", urls: "/profile" },
-		{ item: "Activity", urls: "/activity" },
-		{ item: "Analytics", urls: "/analytics" },
-		{ item: "Settings", urls: "/settings" },
-		{ item: "Log Out", urls: "/logout" },
-	];
 
 	return (
 		<Navbar
@@ -35,9 +25,9 @@ export default function MyNavbar() {
 			isMenuOpen={isMenuOpen}
 			onMenuOpenChange={setIsMenuOpen}
 			maxWidth="2xl"
-			className="w-full !h-[120px]"
+			className="w-full h-[100px] sm:!h-[120px]"
 		>
-			<NavbarContent className="sm:hidden pr-3" justify="center">
+			<NavbarContent className="sm:hidden" justify="center">
 				<NavbarBrand>
 					<Logo />
 				</NavbarBrand>
@@ -81,7 +71,11 @@ export default function MyNavbar() {
 					<Globe />
 				</MyButtons>
 				<NavbarItem>
-					<MyButtons>MyFeedback for business</MyButtons>
+					<MyButtons
+						onClick={() => Navigate("/my-feedback-for-business")}
+					>
+						MyFeedback for business
+					</MyButtons>
 				</NavbarItem>
 			</NavbarContent>
 
@@ -93,7 +87,7 @@ export default function MyNavbar() {
 			</NavbarContent>
 
 			<NavbarMenu
-				style={{ "--navbar-height": "120px", overflow: "hidden" }}
+				style={{ "--navbar-height": "100px", overflow: "hidden" }}
 			>
 				<NavbarMenuItem className="mb-4">
 					<div className="h-auto min-[500px]:h-[51px] w-auto flex flex-col min-[500px]:flex-row items-center justify-center gap-2 p-0 min-[500px]:p-1 min-[500px]:py-4 rounded-md min-[500px]:rounded-full border-0 min-[500px]:border border-accent focus-within:border-primary text-base font-light">
@@ -116,7 +110,7 @@ export default function MyNavbar() {
 
 				<hr />
 
-				{menuItems.map(({ item, urls }, index) => (
+				{MobileNavMenuItems.map(({ item, urls }, index) => (
 					<NavbarMenuItem
 						key={index}
 						className="h-[44px] hover:bg-primary/10 active:bg-primary/20 px-3 rounded-md"

@@ -1,0 +1,10 @@
+[
+	{ "item": "Dashboard", "urls": "/" },
+	{ "item": "Explore", "urls": "/explore" },
+	{ "item": "MyFeedback for business", "urls": "/my-feedback-for-business" },
+	{ "item": "Profile", "urls": "/profile" },
+	{ "item": "Activity", "urls": "/activity" },
+	{ "item": "Analytics", "urls": "/analytics" },
+	{ "item": "Settings", "urls": "/settings" },
+	{ "item": "Log Out", "urls": "/logout" }
+]
