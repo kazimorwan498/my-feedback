@@ -11,7 +11,7 @@ import {
 } from "@heroui/react";
 import { Globe, Logo, Search } from "@/Components/Global/Icon";
 import { Link, useNavigate } from "react-router-dom";
-import MyButtons from "./Global/MyButtons";
+import MyButtons from "../Global/MyButtons";
 
 export default function MyNavbar() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -76,7 +76,10 @@ export default function MyNavbar() {
 				<Button className="lg:hidden !size-[43px] !p-0 min-w-[43px] rounded-full bg-primary text-white">
 					<Search className="size-4 stroke-2" />
 				</Button>
-				<MyButtons className="!size-8 !p-0 min-w-8 bg-transparent text-[rgb(89,89,89)]">
+				<MyButtons
+					className="!size-8 !p-0 min-w-8 bg-transparent text-[rgb(89,89,89)]"
+					onClick={() => Navigate("/explore")}
+				>
 					<Globe />
 				</MyButtons>
 				<NavbarItem>
@@ -92,7 +95,7 @@ export default function MyNavbar() {
 			</NavbarContent>
 
 			<NavbarMenu style={{ "--navbar-height": "120px" }}>
-				<NavbarMenuItem>
+				<NavbarMenuItem className="mb-4">
 					<div className="h-auto 400px:h-[51px] w-auto flex flex-col 400px:flex-row items-center justify-center gap-2 p-0 400px:p-1 400px:py-4 rounded-md 400px:rounded-full border-0 400px:border border-accent focus-within:border-primary text-base font-light">
 						<input
 							type="search"
