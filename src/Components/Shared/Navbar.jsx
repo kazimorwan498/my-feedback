@@ -19,16 +19,14 @@ export default function MyNavbar() {
 	const Navigate = useNavigate();
 
 	const menuItems = [
-		"Profile",
-		"Dashboard",
-		"Activity",
-		"Analytics",
-		"System",
-		"Deployments",
-		"My Settings",
-		"Team Settings",
-		"Help & Feedback",
-		"Log Out",
+		{ item: "Dashboard", urls: "/" },
+		{ item: "Explore", urls: "/explore" },
+		{ item: "MyFeedback for business", urls: "/my-feedback-for-business" },
+		{ item: "Profile", urls: "/profile" },
+		{ item: "Activity", urls: "/activity" },
+		{ item: "Analytics", urls: "/analytics" },
+		{ item: "Settings", urls: "/settings" },
+		{ item: "Log Out", urls: "/logout" },
 	];
 
 	return (
@@ -94,18 +92,20 @@ export default function MyNavbar() {
 				/>
 			</NavbarContent>
 
-			<NavbarMenu style={{ "--navbar-height": "120px" }}>
+			<NavbarMenu
+				style={{ "--navbar-height": "120px", overflow: "hidden" }}
+			>
 				<NavbarMenuItem className="mb-4">
 					<div className="h-auto 400px:h-[51px] w-auto flex flex-col 400px:flex-row items-center justify-center gap-2 p-0 400px:p-1 400px:py-4 rounded-md 400px:rounded-full border-0 400px:border border-accent focus-within:border-primary text-base font-light">
 						<input
 							type="search"
 							placeholder="restaurant, hotel, service...."
-							className="size-full h-[51px] 400px:h-auto bg-transparent px-[19px] text-searchText placeholder:text-searchText outline-0 rounded-full 400px:rounded-tl-full 400px:rounded-bl-full border-2 400px:border-0 400px:border-r border-searchText focus:border-primary"
+							className="size-full h-[51px] 400px:h-auto bg-transparent px-[19px] text-searchText placeholder:text-searchText outline-0 rounded-full 400px:rounded-none 400px:rounded-tl-full 400px:rounded-bl-full border-2 400px:border-0 400px:border-r border-searchText focus:border-primary"
 						/>
 						<input
 							type="search"
 							placeholder="Singapore..."
-							className="size-full h-[51px] 400px:h-auto bg-transparent px-[19px] text-searchText placeholder:text-searchText outline-0 rounded-full 400px:rounded-tr-full 400px:rounded-br-full border-2 400px:border-0 border-searchText focus:border-primary"
+							className="size-full h-[51px] 400px:h-auto bg-transparent px-[19px] text-searchText placeholder:text-searchText outline-0 rounded-full 400px:rounded-none 400px:rounded-tr-full 400px:rounded-br-full border-2 400px:border-0 border-searchText focus:border-primary"
 						/>
 						<Button className="size-full 400px:!size-[43px] !p-0 min-w-[43px] rounded-full bg-primary text-white">
 							<Search className="size-4 stroke-2" />
@@ -113,19 +113,16 @@ export default function MyNavbar() {
 						</Button>
 					</div>
 				</NavbarMenuItem>
-				{menuItems.map((item, index) => (
-					<NavbarMenuItem key={`${item}-${index}`}>
+
+				{menuItems.map(({ item, urls }, index) => (
+					<NavbarMenuItem
+						key={index}
+						className="h-[44px] hover:bg-primary/20 px-3 rounded-md"
+					>
 						<Link
-							className="w-full"
-							color={
-								index === 2
-									? "warning"
-									: index === menuItems.length - 1
-									? "danger"
-									: "foreground"
-							}
-							href="#"
-							size="lg"
+							to={urls}
+							onClick={() => setIsMenuOpen(false)}
+							className="size-full text-secondary flex items-center"
 						>
 							{item}
 						</Link>
