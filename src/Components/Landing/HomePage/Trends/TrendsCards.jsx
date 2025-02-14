@@ -12,7 +12,7 @@ export default function TrendsCards() {
 					des={des}
 					rate={rate}
 					reviews={reviews}
-					className="w-[319px] min-w-[319px]"
+					className="w-[319px] sm:min-w-[319px]"
 				/>
 			))}
 		</section>

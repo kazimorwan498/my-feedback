@@ -1,0 +1,50 @@
+[
+	{
+		"username": "Leslie sakho",
+		"location": "Canada, toronto",
+		"date": "09/11/2023",
+		"des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+		"des2": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+		"img": ["reviews1.png", "reviews2.png", "reviews3.png"]
+	},
+	{
+		"username": "Chris macari",
+		"location": "Singapore",
+		"date": "14/09/2023",
+		"des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+		"des2": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+		"img": ["reviews4.png", "reviews5.png", "reviews6.png"]
+	},
+	{
+		"username": "Jojo alba",
+		"location": "Kuala lumpur",
+		"date": "28/09/2023",
+		"des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+		"des2": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+		"img": ["reviews7.png", "reviews8.png", "reviews9.png"]
+	},
+	{
+		"username": "Chris macari",
+		"location": "Singapore",
+		"date": "14/09/2023",
+		"des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+		"des2": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+		"img": ["reviews4.png", "reviews5.png", "reviews6.png"]
+	},
+	{
+		"username": "Jojo alba",
+		"location": "Kuala lumpur",
+		"date": "28/09/2023",
+		"des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+		"des2": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+		"img": ["reviews7.png", "reviews8.png", "reviews9.png"]
+	},
+	{
+		"username": "Leslie sakho",
+		"location": "Canada, toronto",
+		"date": "09/11/2023",
+		"des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+		"des2": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+		"img": ["reviews1.png", "reviews2.png", "reviews3.png"]
+	}
+]

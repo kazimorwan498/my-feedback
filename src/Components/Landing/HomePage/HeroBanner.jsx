@@ -25,8 +25,8 @@ export default function HeroBanner() {
 
 			<div className="max-w-[1239px] overflow-hidden">
 				<div
-					className="flex gap-2 transition-transform duration-500"
-					style={{ transform: `translateX(-${Carousel * 100.78}%)` }}
+					className="flex gap-2 transition-transform duration-500 ease-in-out"
+					style={{ transform: `translateX(-${Carousel * 100.69}%)` }}
 				>
 					{[...Array(Slides)].map((_, i) => (
 						<div
