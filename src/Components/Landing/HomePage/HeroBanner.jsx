@@ -2,6 +2,8 @@ import { useState } from "react";
 import CarouselCardData from "../../../lib/db/CarouselCardData.json";
 import { Arrow } from "../../Global/Icon";
 import HeroCards from "../../Global/HeroCards";
+import Heading from "../../Global/Heading";
+import ArrowButton from "../../Global/ArrowButton";
 
 export default function HeroBanner() {
 	const [Carousel, setCarousel] = useState(0);
@@ -17,9 +19,9 @@ export default function HeroBanner() {
 
 	return (
 		<section className="max-w-[1345px] mx-auto py-5 px-2 sm:px-10 md:ps-[52px] md:pe-[54px] bg-primary rounded-[9px] overflow-hidden relative mb-2">
-			<h2 className="font-lexend text-xl sm:text-2xl md:text-[32px] text-white mb-[31px]">
+			<Heading className="text-xl sm:text-2xl md:text-[32px] text-white mb-[31px] font-normal">
 				Find the best restaurant ratings below
-			</h2>
+			</Heading>
 
 			<div className="max-w-[1239px] overflow-hidden">
 				<div
@@ -60,18 +62,12 @@ export default function HeroBanner() {
 				))}
 			</div>
 
-			<button
-				onClick={prevSlide}
-				className="flex items-center justify-center absolute left-[23px] top-1/2 transform -translate-y-1/2 bg-primary text-black bg-white/60 hover:bg-white size-[59px] rounded-full transition-transform-colors shadow-[0_12px_12px_rgba(0,0,0,0.12)] backdrop-blur active:scale-95"
-			>
+			<ArrowButton className="left-[23px]" onClick={prevSlide}>
 				<Arrow className="rotate-180" />
-			</button>
-			<button
-				onClick={nextSlide}
-				className="flex items-center justify-center absolute right-[23px] top-1/2 transform -translate-y-1/2 bg-primary text-black bg-white/60 hover:bg-white size-[59px] rounded-full transition-transform-colors shadow-[0_12px_12px_rgba(0,0,0,0.12)] backdrop-blur active:scale-95"
-			>
+			</ArrowButton>
+			<ArrowButton className="right-[23px]" onClick={nextSlide}>
 				<Arrow />
-			</button>
+			</ArrowButton>
 		</section>
 	);
 }
