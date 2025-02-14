@@ -62,11 +62,14 @@ export default function HeroBanner() {
 				))}
 			</div>
 
-			<ArrowButton className="left-[23px]" onClick={prevSlide}>
-				<Arrow className="rotate-180" />
+			<ArrowButton className="sm:left-[23px]" onClick={prevSlide}>
+				<Arrow className="rotate-180 size-5 sm:size-auto" />
 			</ArrowButton>
-			<ArrowButton className="right-[23px]" onClick={nextSlide}>
-				<Arrow />
+			<ArrowButton
+				className="right-2 sm:right-[23px]"
+				onClick={nextSlide}
+			>
+				<Arrow className="!size-5 sm:size-auto" />
 			</ArrowButton>
 		</section>
 	);
