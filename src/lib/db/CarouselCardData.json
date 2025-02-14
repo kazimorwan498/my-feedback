@@ -1,0 +1,58 @@
+[
+	{
+		"img": "carousel1.png",
+		"title": "Bottega",
+		"des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+		"rate": "5.0",
+		"reviews": "876"
+	},
+	{
+		"img": "carousel2.png",
+		"title": "Bottega",
+		"des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+		"rate": "5.0",
+		"reviews": "876"
+	},
+	{
+		"img": "carousel3.png",
+		"title": "Bottega",
+		"des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+		"rate": "5.0",
+		"reviews": "876"
+	},
+	{
+		"img": "carousel4.png",
+		"title": "Bottega",
+		"des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+		"rate": "5.0",
+		"reviews": "876"
+	},
+	{
+		"img": "carousel1.png",
+		"title": "Bottega",
+		"des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+		"rate": "5.0",
+		"reviews": "876"
+	},
+	{
+		"img": "carousel2.png",
+		"title": "Bottega",
+		"des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+		"rate": "5.0",
+		"reviews": "876"
+	},
+	{
+		"img": "carousel3.png",
+		"title": "Bottega",
+		"des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+		"rate": "5.0",
+		"reviews": "876"
+	},
+	{
+		"img": "carousel4.png",
+		"title": "Bottega",
+		"des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+		"rate": "5.0",
+		"reviews": "876"
+	}
+]

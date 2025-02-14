@@ -22,56 +22,56 @@ export const FilterItems = [
 	{
 		img: <Filter2 />,
 		title: "Restaurants",
-		category: "Restaurants",
+		category: "restaurants",
 	},
 	{
 		img: <Filter3 />,
 		title: "Hotels",
-		category: "Hotels",
+		category: "hotels",
 	},
 	{
 		img: <Filter4 />,
 		title: "Home services",
-		category: "Home services",
+		category: "home-services",
 	},
 	{
 		img: <Filter5 />,
 		title: "Shopping",
-		category: "Shopping",
+		category: "shopping",
 	},
 	{
 		img: <Filter6 />,
 		title: "Car location",
-		category: "Car location",
+		category: "car-location",
 	},
 	{
 		img: <Filter7 />,
 		title: "Beauty & Spa",
-		category: "Beauty & Spa",
+		category: "beauty-spa",
 	},
 	{
 		img: <Filter8 />,
 		title: "Park",
-		category: "Park",
+		category: "park",
 	},
 	{
 		img: <Filter9 />,
 		title: "Museum",
-		category: "Museum",
+		category: "museum",
 	},
 	{
 		img: <Filter10 />,
 		title: "Car wash",
-		category: "Car wash",
+		category: "car-wash",
 	},
 	{
 		img: <Filter11 />,
 		title: "Bars",
-		category: "Bars",
+		category: "bars",
 	},
 	{
 		img: <Filter12 />,
 		title: "Gyms",
-		category: "Gyms",
+		category: "gyms",
 	},
 ];

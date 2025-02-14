@@ -9,5 +9,5 @@ body {
 }
 
 .filter.active {
-	@apply text-primary relative after:absolute after:content-[""] after:inset-x-0 after:h-[2px] after:bg-primary after:-bottom-[12px] after:rounded-full;
+	@apply text-primary border-primary;
 }
