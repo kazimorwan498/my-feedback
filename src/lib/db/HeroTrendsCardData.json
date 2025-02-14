@@ -1,0 +1,86 @@
+[
+	{
+		"img": "restaurant1.png",
+		"title": "Bella Italia",
+		"des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+		"rate": "4.8",
+		"reviews": "34"
+	},
+	{
+		"img": "restaurant2.png",
+		"title": "Little Shucker",
+		"des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+		"rate": "4.8",
+		"reviews": "34"
+	},
+	{
+		"img": "restaurant3.png",
+		"title": "Marafuku Ramen",
+		"des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+		"rate": "4.8",
+		"reviews": "34"
+	},
+	{
+		"img": "restaurant4.png",
+		"title": "Bottega",
+		"des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+		"rate": "4.8",
+		"reviews": "34"
+	},
+	{
+		"img": "restaurant5.png",
+		"title": "Arabia Nights",
+		"des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+		"rate": "4.8",
+		"reviews": "34"
+	},
+	{
+		"img": "restaurant6.png",
+		"title": "Lokma",
+		"des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+		"rate": "4.8",
+		"reviews": "34"
+	},
+	{
+		"img": "restaurant7.png",
+		"title": "The snug",
+		"des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+		"rate": "4.8",
+		"reviews": "34"
+	},
+	{
+		"img": "restaurant8.png",
+		"title": "Starbelly",
+		"des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+		"rate": "4.8",
+		"reviews": "34"
+	},
+	{
+		"img": "restaurant9.png",
+		"title": "Iori",
+		"des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+		"rate": "4.8",
+		"reviews": "34"
+	},
+	{
+		"img": "restaurant10.png",
+		"title": "Ngalley",
+		"des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+		"rate": "4.8",
+		"reviews": "34"
+	},
+	{
+		"img": "restaurant11.png",
+		"title": "diogonal",
+		"des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+		"rate": "4.8",
+		"reviews": "34"
+	},
+	{
+		"img": "restaurant12.png",
+		"title": "Kitoko",
+		"des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+		"rate": "4.8",
+		"reviews": "34"
+	}
+]

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import CarouselCardData from "../../../lib/db/CarouselCardData.json";
 import { Arrow } from "../../Global/Icon";
+import HeroCards from "../../Global/HeroCards";
 
 export default function HeroBanner() {
 	const [Carousel, setCarousel] = useState(0);
@@ -32,37 +33,14 @@ export default function HeroBanner() {
 						>
 							{CarouselCardData.slice(i * 4, i * 4 + 4).map(
 								({ img, title, des, rate, reviews }, i) => (
-									<div
+									<HeroCards
+										img={img}
+										title={title}
+										des={des}
+										rate={rate}
+										reviews={reviews}
 										key={i}
-										className="w-[285px] min-w-[285px] bg-[rgb(248,248,248)] rounded-xl"
-									>
-										<img src={img} alt={title} />
-										<div className="py-[13px] px-[14px]">
-											<h3 className="font-semibold text-[19px]">
-												{title}
-											</h3>
-											<p className="text-[rgb(143,143,143)] text-sm">
-												{des}
-											</p>
-											<div className="mt-6 flex items-center gap-[9px]">
-												<div className="flex gap-[6.05px]">
-													{Array.from(
-														Array(5).keys()
-													).map((i) => (
-														<img
-															key={i}
-															src="/star.svg"
-															alt="Star"
-														/>
-													))}
-												</div>
-												<span className="text-sm font-semibold">
-													{rate}{" "}
-													<span className="text-searchText font-normal">{`(${reviews} reviews)`}</span>
-												</span>
-											</div>
-										</div>
-									</div>
+									/>
 								)
 							)}
 						</div>

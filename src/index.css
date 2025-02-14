@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body {
-	@apply font-roboto;
+	@apply font-roboto text-secondary;
 }
 
 .filter.active {
