@@ -72,24 +72,25 @@ export default function HeroBanner() {
 
 			<div className="flex gap-[5px] justify-center">
 				{[...Array(Slides)].map((_, index) => (
-					<span
+					<button
 						key={index}
 						className={`size-[9px] rounded-full transition-all ${
 							index === Carousel ? "bg-white" : "bg-gray-300"
 						}`}
+						onClick={() => setCarousel(index)}
 					/>
 				))}
 			</div>
 
 			<button
 				onClick={prevSlide}
-				className="flex items-center justify-center absolute left-[23px] top-1/2 transform -translate-y-1/2 bg-primary text-black bg-white/60 hover:bg-white size-[59px] rounded-full transition-colors shadow-lg"
+				className="flex items-center justify-center absolute left-[23px] top-1/2 transform -translate-y-1/2 bg-primary text-black bg-white/60 hover:bg-white size-[59px] rounded-full transition-transform-colors shadow-[0_12px_12px_rgba(0,0,0,0.12)] backdrop-blur active:scale-95"
 			>
 				<Arrow className="rotate-180" />
 			</button>
 			<button
 				onClick={nextSlide}
-				className="flex items-center justify-center absolute right-[23px] top-1/2 transform -translate-y-1/2 bg-primary text-black bg-white/60 hover:bg-white size-[59px] rounded-full transition-colors shadow-lg"
+				className="flex items-center justify-center absolute right-[23px] top-1/2 transform -translate-y-1/2 bg-primary text-black bg-white/60 hover:bg-white size-[59px] rounded-full transition-transform-colors shadow-[0_12px_12px_rgba(0,0,0,0.12)] backdrop-blur active:scale-95"
 			>
 				<Arrow />
 			</button>
