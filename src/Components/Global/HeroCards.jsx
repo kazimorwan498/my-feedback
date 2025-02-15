@@ -26,7 +26,9 @@ export default function HeroCards({
 			<img src={img} alt={title} />
 			<div className="py-[13px] px-[14px]">
 				<h3 className="font-semibold text-[19px]">{title}</h3>
-				<p className="text-[rgb(143,143,143)] text-sm">{des}</p>
+				<p className="text-[rgb(143,143,143)] text-sm sm:text-base">
+					{des}
+				</p>
 				<div className="mt-6 flex items-center gap-[9px]">
 					<div className="flex gap-[6.05px]">
 						{Array.from(Array(5).keys()).map((i) => (

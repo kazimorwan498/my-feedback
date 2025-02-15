@@ -1,0 +1,7 @@
+[
+	{ "key": "english", "label": "English" },
+	{ "key": "bangla", "label": "Bangla" },
+	{ "key": "hindi", "label": "Hindi" },
+	{ "key": "urdu", "label": "Urdu" },
+	{ "key": "arabic", "label": "Arabic" }
+]

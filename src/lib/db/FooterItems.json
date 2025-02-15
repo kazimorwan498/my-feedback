@@ -1,0 +1,18 @@
+[
+	{
+		"title": "About",
+		"items": ["About MyFeedback", "Investor Relations"]
+	},
+	{
+		"title": "MyFeedback",
+		"items": [
+			"MyFeedback for business",
+			"Collections",
+			"Talk",
+			"Events",
+			"MyFeedback blog",
+			"Support",
+			"Developers"
+		]
+	}
+]

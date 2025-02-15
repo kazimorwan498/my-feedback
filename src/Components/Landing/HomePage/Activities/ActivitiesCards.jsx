@@ -26,12 +26,12 @@ export default function ActivitiesCards() {
 	};
 
 	return (
-		<div className="flex gap-[30px] items-center overflow-hidden relative">
+		<div className="flex gap-[30px] items-center overflow-x-hidden relative pb-16">
 			{ActivitiesCardsData.map(
 				({ username, location, date, des, des2, img }, i) => (
 					<div
 						key={i}
-						className="size-full min-w-[300px] sm:min-w-[457px] bg-[rgb(248,248,248)] pt-6 pb-[23px] ps-[13px] pe-3 rounded-[14px] transition-transform ease-in-out"
+						className="size-full min-w-[300px] sm:min-w-[457px] bg-[rgb(248,248,248)] pt-6 pb-[23px] ps-[13px] pe-3 rounded-[14px] transition-all ease-in-out hover:shadow-lg"
 						style={{
 							transform: `translateX(${CurrentPosition}px)`,
 						}}
