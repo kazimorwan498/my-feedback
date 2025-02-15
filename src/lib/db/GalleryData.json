@@ -1,0 +1,22 @@
+[
+    {
+        "img": "/gallery1.png",
+        "style": "col-span-2 row-span-2 size-full"
+    },
+    {
+        "img": "/gallery2.png",
+        "style": "size-full"
+    },
+    {
+        "img": "/gallery3.png",
+        "style": "size-full"
+    },
+    {
+        "img": "/gallery4.png",
+        "style": "size-full"
+    },
+    {
+        "img": "/gallery5.png",
+        "style": "size-full"
+    }
+]
