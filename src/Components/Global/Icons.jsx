@@ -383,7 +383,7 @@ export const Arrow = (props) => (
 	</svg>
 );
 
-export const Sort = (props) => (
+export const SortIcon = (props) => (
 	<svg
 		width={19}
 		height={17}
@@ -396,5 +396,32 @@ export const Sort = (props) => (
 			d="M15.2 17L11.4 13.2222H14.25V3.77778H11.4L15.2 0L19 3.77778H16.15V13.2222H19M0 15.1111V13.2222H9.5V15.1111M0 9.44444V7.55556H6.65V9.44444M0 3.77778V1.88889H3.8V3.77778H0Z"
 			fill="currentColor"
 		/>
+	</svg>
+);
+
+export const LocationIcon = (props) => (
+	<svg
+		fill="currentColor"
+		width="19px"
+		height="24px"
+		viewBox="0 0 24 24"
+		xmlns="http://www.w3.org/2000/svg"
+		{...props}
+	>
+		<path d="M17.657 5.304c-3.124-3.073-8.189-3.073-11.313 0-3.124 3.074-3.124 8.057 0 11.13l5.656 5.565 5.657-5.565c3.124-3.073 3.124-8.056 0-11.13zm-5.657 8.195c-.668 0-1.295-.26-1.768-.732-.975-.975-.975-2.561 0-3.536.472-.472 1.1-.732 1.768-.732s1.296.26 1.768.732c.975.975.975 2.562 0 3.536-.472.472-1.1.732-1.768.732z" />
+	</svg>
+);
+
+export const ClockIcon = (props) => (
+	<svg
+		fill="currentColor"
+		width="19px"
+		height="24px"
+		viewBox="0 0 24 24"
+		baseProfile="tiny"
+		xmlns="http://www.w3.org/2000/svg"
+		{...props}
+	>
+		<path d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M15.5,14c-0.3,0.5-0.9,0.6-1.4,0.4l-2.6-1.5C11.2,12.7,11,12.4,11,12V7c0-0.6,0.4-1,1-1s1,0.4,1,1v4.4l2.1,1.2C15.6,12.9,15.7,13.5,15.5,14z" />
 	</svg>
 );

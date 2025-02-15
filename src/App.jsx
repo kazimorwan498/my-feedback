@@ -4,6 +4,7 @@ import MyNavbar from "./Components/Shared/Navbar";
 import Error from "./Components/Global/Error";
 import Hero from "./Components/Landing/HomePage/Hero";
 import Restaurants from "./Components/Landing/Restaurants/Restaurants";
+import BellaItalia from "./Components/Landing/BellaItalia/BellaItalia";
 
 function App() {
 	return (
@@ -12,6 +13,7 @@ function App() {
 			<Routes>
 				<Route path="/" element={<Hero />} />
 				<Route path="/restaurants" element={<Restaurants />} />
+				<Route path="/bellaItalia" element={<BellaItalia />} />
 				<Route path="*" element={<Error />} />
 			</Routes>
 		</BrowserRouter>
