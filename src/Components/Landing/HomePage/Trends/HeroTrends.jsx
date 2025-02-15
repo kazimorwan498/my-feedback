@@ -13,12 +13,12 @@ export default function HeroTrends() {
 		<section className="mt-12 sm:mt-24">
 			<Heading className="mb-[25px]">The latest trends</Heading>
 			<TrendsCards />
-			<div className="flex flex-col gap-5 items-center justify-center pt-[46px] pb-[84px]">
-				<Heading className="text-[22px] font-normal">
+			<div className="flex flex-col gap-5 items-center justify-center pt-[46px] pb-16 sm:pb-[84px]">
+				<Heading className="text-[22px] font-normal text-center sm:text-start">
 					Discover more cool restaurants
 				</Heading>
 				<MyButtons
-					className="text-[19px] !py-[9.25px] ps-[39.59px] pe-10 bg-primary"
+					className="sm:text-[19px] !py-[9.25px] sm:ps-[39.59px] sm:pe-10 bg-primary"
 					onClick={handleClick}
 				>
 					Show more

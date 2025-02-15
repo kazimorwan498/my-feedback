@@ -3,6 +3,7 @@ import Heading from "../Global/Heading";
 import LanguageOptionData from "../../lib/db/LanguageOptionData.json";
 import CountriesOptionData from "../../lib/db/CountriesOptionData.json";
 import { Select, SelectItem } from "@heroui/react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
 	const currentMonth = new Date().toLocaleString("en-US", { month: "long" });
@@ -12,10 +13,12 @@ export default function Footer() {
 			<ul className="flex flex-col min-[486px]:flex-row justify-between gap-x-5 gap-y-8 max-w-[810px] mx-auto mb-[66px]">
 				{FooterItems.map(({ title, items }, i) => (
 					<div key={i}>
-						<Heading className="text-xl mb-[11px]">{title}</Heading>
+						<Heading className="text-xl mb-[22px]">{title}</Heading>
 						<ul className="space-y-[13px] text-[rgb(94,94,94)] text-sm">
-							{items.map((items, i) => (
-								<li key={i}>{items}</li>
+							{items.map(({ label, url }, i) => (
+								<Link className="block" to={url} key={i}>
+									{label}
+								</Link>
 							))}
 						</ul>
 					</div>

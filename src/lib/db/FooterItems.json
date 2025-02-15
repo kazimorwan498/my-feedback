@@ -1,18 +1,48 @@
 [
 	{
 		"title": "About",
-		"items": ["About MyFeedback", "Investor Relations"]
+		"items": [
+			{
+				"label": "About MyFeedback",
+				"url": "about-myFeedback"
+			},
+			{
+				"label": "Investor Relations",
+				"url": "investor-relations"
+			}
+		]
 	},
 	{
 		"title": "MyFeedback",
 		"items": [
-			"MyFeedback for business",
-			"Collections",
-			"Talk",
-			"Events",
-			"MyFeedback blog",
-			"Support",
-			"Developers"
+			{
+				"label": "MyFeedback for business",
+				"url": "my-feedback-for-business"
+			},
+			{
+				"label": "Collections",
+				"url": "collections"
+			},
+			{
+				"label": "Talk",
+				"url": "talk"
+			},
+			{
+				"label": "Events",
+				"url": "events"
+			},
+			{
+				"label": "MyFeedback blog",
+				"url": "my-feedback-blog"
+			},
+			{
+				"label": "Support",
+				"url": "support"
+			},
+			{
+				"label": "Developers",
+				"url": "developers"
+			}
 		]
 	}
 ]

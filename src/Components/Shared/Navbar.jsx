@@ -19,6 +19,10 @@ export default function MyNavbar() {
 
 	const Navigate = useNavigate();
 
+	const NavigateLogo = () => {
+		Navigate("/");
+	};
+
 	return (
 		<Navbar
 			shouldHideOnScroll
@@ -30,16 +34,13 @@ export default function MyNavbar() {
 			className="w-full h-[100px] sm:!h-[120px]"
 		>
 			<NavbarContent className="sm:hidden" justify="center">
-				<NavbarBrand>
+				<NavbarBrand className="cursor-pointer" onClick={NavigateLogo}>
 					<Logo />
 				</NavbarBrand>
 			</NavbarContent>
 
 			<NavbarContent className="hidden sm:flex gap-4" justify="center">
-				<NavbarBrand
-					className="cursor-pointer"
-					onClick={() => Navigate("/")}
-				>
+				<NavbarBrand className="cursor-pointer" onClick={NavigateLogo}>
 					<Logo />
 				</NavbarBrand>
 			</NavbarContent>

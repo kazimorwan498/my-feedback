@@ -9,11 +9,14 @@ import { Close, Sort } from "../../Global/Icons";
 
 export default function RestaurantsLeftDropdown() {
 	return (
-		<Dropdown placement="bottom-end" className="w-[276px] h-[173px]">
+		<Dropdown
+			placement="bottom-end"
+			className="w-[276px] h-[173px] border border-[rgb(230,230,230)] shadow-[0_20px_20px_rgba(0,0,0,0.06)]"
+		>
 			<DropdownTrigger>
 				<Button
 					variant="bordered"
-					className="rounded-full text-[rgb(93,93,93)] font-medium text-[17px] border-[rgb(93,93,93)] aria-expanded:bg-[rgb(93,93,93)] aria-expanded:text-white"
+					className="rounded-full text-[rgb(93,93,93)] font-medium text-sm sm:text-[17px] border-[rgb(93,93,93)] aria-expanded:bg-[rgb(93,93,93)] aria-expanded:text-white min-w-[90px] sm:min-w-[95px]"
 				>
 					<Sort /> Sort
 				</Button>

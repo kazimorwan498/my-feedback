@@ -6,7 +6,7 @@ export default function MyButtons({ children, className, onClick }) {
 	return (
 		<Button
 			className={cn(
-				"px-7 !py-[11.5px] bg-secondary text-white rounded-full text-[0.96875rem] !size-auto",
+				"px-7 !py-[11.5px] bg-secondary text-white rounded-full text-[15.5px] !size-auto",
 				className
 			)}
 			onPress={onClick}

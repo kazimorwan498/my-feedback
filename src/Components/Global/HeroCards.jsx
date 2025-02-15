@@ -12,7 +12,7 @@ export default function HeroCards({
 	const Navigate = useNavigate();
 
 	const handleClick = () => {
-		Navigate("/restaurants");
+		Navigate("/bellaItalia");
 	};
 
 	return (

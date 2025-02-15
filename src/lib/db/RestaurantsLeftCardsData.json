@@ -1,0 +1,51 @@
+[
+	{
+		"img": "restaurant13.png",
+		"title": "The snug",
+		"des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+		"rate": "4.5",
+		"reviews": "654"
+	},
+	{
+		"img": "restaurant14.png",
+		"title": "Bottega",
+		"des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+		"rate": "5.0",
+		"reviews": "1654"
+	},
+	{
+		"img": "restaurant15.png",
+		"title": "Little Shucker",
+		"des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+		"rate": "3.0",
+		"reviews": "553"
+	},
+	{
+		"img": "restaurant16.png",
+		"title": "Lokma",
+		"des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+		"rate": "4.5",
+		"reviews": "654"
+	},
+	{
+		"img": "restaurant17.png",
+		"title": "Starbelly",
+		"des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+		"rate": "4.5",
+		"reviews": "654"
+	},
+	{
+		"img": "restaurant18.png",
+		"title": "The melt",
+		"des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+		"rate": "4.5",
+		"reviews": "654"
+	},
+	{
+		"img": "restaurant19.png",
+		"title": "Arabia Nights",
+		"des": "The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout.",
+		"rate": "4.5",
+		"reviews": "654"
+	}
+]
