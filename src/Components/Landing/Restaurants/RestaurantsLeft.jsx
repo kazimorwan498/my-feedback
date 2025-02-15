@@ -13,7 +13,7 @@ export default function RestaurantsLeft() {
 	};
 
 	return (
-		<section className="pt-5 lg:w-1/2">
+		<section className="pt-5 1070px:w-1/2">
 			<Breadcrumbs
 				itemClasses={{
 					separator: "px-2",
@@ -27,14 +27,14 @@ export default function RestaurantsLeft() {
 			</Breadcrumbs>
 
 			<div className="flex items-center justify-between mb-2">
-				<Heading className="text-xl sm:text-[32px] lg:text-[22px] xl:!text-[32px]">
+				<Heading className="text-xl sm:text-[32px]">
 					best restaurants in Singapore
 				</Heading>
 				<RestaurantsLeftDropdown />
 			</div>
 			<RestaurantsLeftCards />
 
-			<MyButtons className="sm:text-[19px] !py-[9.25px] sm:ps-[39.59px] sm:pe-10 bg-primary mt-4 sm:mt-8 mb-8 sm:mb-32">
+			<MyButtons className="sm:text-[19px] !py-[9.25px] sm:ps-[39.59px] sm:pe-10 bg-primary mt-4 sm:mt-8 mb-8 sm:mb-20">
 				Show more
 			</MyButtons>
 		</section>
