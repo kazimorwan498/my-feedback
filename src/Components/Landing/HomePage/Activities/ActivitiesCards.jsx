@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import ActivitiesCardsData from "../../../../lib/db/ActivitiesCardsData.json";
-import { Arrow } from "../../../Global/Icon";
+import { Arrow } from "../../../Global/Icons";
 import ArrowButton from "../../../Global/ArrowButton";
 import { useState } from "react";
 

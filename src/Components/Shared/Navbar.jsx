@@ -9,7 +9,7 @@ import {
 	NavbarItem,
 	Button,
 } from "@heroui/react";
-import { Globe, Logo, Search } from "@/Components/Global/Icon";
+import { Globe, Logo, Search } from "../Global/Icons";
 import { Link, useNavigate } from "react-router-dom";
 import MyButtons from "../Global/MyButtons";
 import MobileNavMenuItems from "../../lib/db/MobileNavMenuItems.json";

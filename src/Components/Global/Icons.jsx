@@ -57,16 +57,20 @@ export const Globe = (props) => (
 
 export const Close = (props) => (
 	<svg
-		fill="#000000"
-		width="800px"
-		height="800px"
-		viewBox="-6 -6 24 24"
+		data-slot="icon"
+		fill="none"
+		strokeWidth={1.5}
+		stroke="currentColor"
+		viewBox="0 0 24 24"
 		xmlns="http://www.w3.org/2000/svg"
-		preserveAspectRatio="xMinYMin"
-		className="jam jam-close"
+		aria-hidden="true"
 		{...props}
 	>
-		<path d="M7.314 5.9l3.535-3.536A1 1 0 1 0 9.435.95L5.899 4.485 2.364.95A1 1 0 1 0 .95 2.364l3.535 3.535L.95 9.435a1 1 0 1 0 1.414 1.414l3.535-3.535 3.536 3.535a1 1 0 1 0 1.414-1.414L7.314 5.899z" />
+		<path
+			strokeLinecap="round"
+			strokeLinejoin="round"
+			d="M6 18 18 6M6 6l12 12"
+		/>
 	</svg>
 );
 
@@ -376,5 +380,21 @@ export const Arrow = (props) => (
 		{...props}
 	>
 		<path d="M8.29289 2.29289C8.68342 1.90237 9.31658 1.90237 9.70711 2.29289L14.2071 6.79289C14.5976 7.18342 14.5976 7.81658 14.2071 8.20711L9.70711 12.7071C9.31658 13.0976 8.68342 13.0976 8.29289 12.7071C7.90237 12.3166 7.90237 11.6834 8.29289 11.2929L11 8.5H1.5C0.947715 8.5 0.5 8.05228 0.5 7.5C0.5 6.94772 0.947715 6.5 1.5 6.5H11L8.29289 3.70711C7.90237 3.31658 7.90237 2.68342 8.29289 2.29289Z" />
+	</svg>
+);
+
+export const Sort = (props) => (
+	<svg
+		width={19}
+		height={17}
+		viewBox="0 0 19 17"
+		fill="none"
+		xmlns="http://www.w3.org/2000/svg"
+		{...props}
+	>
+		<path
+			d="M15.2 17L11.4 13.2222H14.25V3.77778H11.4L15.2 0L19 3.77778H16.15V13.2222H19M0 15.1111V13.2222H9.5V15.1111M0 9.44444V7.55556H6.65V9.44444M0 3.77778V1.88889H3.8V3.77778H0Z"
+			fill="currentColor"
+		/>
 	</svg>
 );

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import CarouselCardData from "../../../lib/db/CarouselCardData.json";
-import { Arrow } from "../../Global/Icon";
+import { Arrow } from "../../Global/Icons";
 import HeroCards from "../../Global/HeroCards";
 import Heading from "../../Global/Heading";
 import ArrowButton from "../../Global/ArrowButton";

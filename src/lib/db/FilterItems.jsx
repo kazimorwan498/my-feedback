@@ -11,7 +11,7 @@ import {
 	Filter7,
 	Filter8,
 	Filter9,
-} from "../../Components/Global/Icon";
+} from "../../Components/Global/Icons";
 
 export const FilterItems = [
 	{

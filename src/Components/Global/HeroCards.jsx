@@ -23,7 +23,15 @@ export default function HeroCards({
 			)}
 			onClick={handleClick}
 		>
-			<img src={img} alt={title} />
+			<div className="relative">
+				<img src={img} alt={title} />
+				<div className="absolute bottom-1 left-1/2 -translate-x-1/2 flex gap-[5px]">
+					<span className="size-[9px] rounded-full bg-white" />
+					<span className="size-[9px] rounded-full bg-[rgb(217,217,217)]" />
+					<span className="size-[9px] rounded-full bg-[rgb(217,217,217)]" />
+					<span className="size-[9px] rounded-full bg-[rgb(217,217,217)]" />
+				</div>
+			</div>
 			<div className="py-[13px] px-[14px]">
 				<h3 className="font-semibold text-[19px]">{title}</h3>
 				<p className="text-[rgb(143,143,143)] text-sm sm:text-base">
