@@ -1,3 +1,4 @@
+import FiveStar from "../../Global/FiveStar";
 import Heading from "../../Global/Heading";
 import { ClockIcon, LocationIcon } from "../../Global/Icons";
 
@@ -17,17 +18,8 @@ export default function BellaItaliaHero() {
 		<section className="px-2 sm:px-8 md:px-[97px] pt-8 sm:pt-[67px] pb-16 sm:pb-28 bg-[url('/bellaItalia-bg.png')]">
 			<Heading className="text-white">Bella italia</Heading>
 			<div className="mt-2 sm:mt-3.5 flex items-center gap-[9px]">
-				<div className="flex gap-[6.05px]">
-					{Array.from(Array(5).keys()).map((i) => (
-						<img
-							className="size-4 sm:size-[26px]"
-							key={i}
-							src="/star.svg"
-							alt="Star"
-						/>
-					))}
-				</div>
-				<span class="text-xs font-semibold text-white text-[19px]">
+				<FiveStar star="size-4 sm:size-[26px]" i={5} />
+				<span class="text-xs font-semibold text-white !text-[19px]">
 					5.0 <span class="font-light">(876 reviews)</span>
 				</span>
 			</div>

@@ -1,11 +1,11 @@
-import Heading from "../../Global/Heading";
+import Heading from "../../../Global/Heading";
 import {
 	CallIcon,
 	ClockIcon,
 	LocationIcon,
 	RestaurantMenuIcon,
 	WebPageIcon,
-} from "../../Global/Icons";
+} from "../../../Global/Icons";
 import { Link } from "react-router-dom";
 
 export default function BellaItaliaAboutLocation() {
@@ -40,7 +40,7 @@ export default function BellaItaliaAboutLocation() {
 	];
 
 	return (
-		<section className="grid grid-cols-1 1070px:grid-cols-5 gap-y-10 pb-[52px] max-w-[1164px] border-b border-[rgb(220,220,220)]">
+		<section className="grid grid-cols-1 1070px:grid-cols-5 gap-y-10 pb-[52px] border-b border-[rgb(220,220,220)]">
 			<div className="col-span-2">
 				<Heading className="font-semibold !text-2xl sm:!text-3xl md:text-[34px]">
 					More Information's

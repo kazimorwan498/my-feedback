@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import RestaurantsLeftCardsData from "../../../lib/db/RestaurantsLeftCardsData.json";
+import FiveStar from "../../Global/FiveStar";
 
 export default function RestaurantsLeftCards() {
 	const Navigate = useNavigate();
@@ -40,17 +41,7 @@ export default function RestaurantsLeftCards() {
 									{des}
 								</p>
 								<div className="mt-6 flex items-center gap-[9px]">
-									<div className="flex gap-[6.05px]">
-										{Array.from(Array(5).keys()).map(
-											(i) => (
-												<img
-													key={i}
-													src="/star.svg"
-													alt="Star"
-												/>
-											)
-										)}
-									</div>
+									<FiveStar i={5} />
 									<span className="text-sm font-semibold">
 										{rate}{" "}
 										<span className="text-searchText font-normal">{`(${reviews} reviews)`}</span>

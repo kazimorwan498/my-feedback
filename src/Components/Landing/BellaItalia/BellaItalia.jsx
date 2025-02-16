@@ -1,5 +1,5 @@
 import MyBreadcrumbs from "../../Global/MyBreadcrumbs";
-import BellaItaliaAbout from "./BellaItaliaAbout";
+import BellaItaliaAbout from "./BellaItaliaAbout/BellaItaliaAbout";
 import BellaItaliaHero from "./BellaItaliaHero";
 import Gallery from "./Gallery";
 

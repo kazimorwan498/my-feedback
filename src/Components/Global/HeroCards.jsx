@@ -1,5 +1,6 @@
 import { cn } from "@heroui/react";
 import { useNavigate } from "react-router-dom";
+import FiveStar from "./FiveStar";
 
 export default function HeroCards({
 	img,
@@ -38,11 +39,7 @@ export default function HeroCards({
 					{des}
 				</p>
 				<div className="mt-6 flex items-center gap-[9px]">
-					<div className="flex gap-[6.05px]">
-						{Array.from(Array(5).keys()).map((i) => (
-							<img key={i} src="/star.svg" alt="Star" />
-						))}
-					</div>
+					<FiveStar i={5} />
 					<span className="text-sm font-semibold">
 						{rate}{" "}
 						<span className="text-searchText font-normal">{`(${reviews} reviews)`}</span>
