@@ -5,8 +5,8 @@ import { Grid3Icon } from "../../Global/Icons";
 
 export default function Gallery() {
 	return (
-		<section className="pt-[148px] relative">
-			<div className="absolute -top-16 left-1/2 -translate-x-1/2">
+		<section className="pt-24 sm:pt-[148px] relative">
+			<div className="absolute -top-12 sm:-top-16 left-1/2 -translate-x-1/2 size-24 sm:size-auto">
 				<img src="/bellaItalia-logo.svg" alt="bellaItalia-logo" />
 			</div>
 
@@ -18,11 +18,11 @@ export default function Gallery() {
 			</p>
 
 			<div className="relative mt-10 mb-20">
-				<div className="grid grid-cols-4 gap-[15px] max-w-[1164px]">
-					{GalleryData.map(({ img, style }, i) => (
+				<div className="grid grid-cols-4 gap-1.5 sm:gap-2.5 lg:gap-[15px] max-w-[1164px]">
+					{GalleryData.map((img, i) => (
 						<img
 							key={i}
-							className={style}
+							className="first:col-span-2 first:row-span-2 size-full"
 							src={img}
 							alt="Gallery"
 						/>

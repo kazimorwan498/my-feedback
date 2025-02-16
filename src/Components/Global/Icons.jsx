@@ -402,8 +402,6 @@ export const SortIcon = (props) => (
 export const LocationIcon = (props) => (
 	<svg
 		fill="currentColor"
-		width="19px"
-		height="24px"
 		viewBox="0 0 24 24"
 		xmlns="http://www.w3.org/2000/svg"
 		{...props}
@@ -415,8 +413,6 @@ export const LocationIcon = (props) => (
 export const ClockIcon = (props) => (
 	<svg
 		fill="currentColor"
-		width="19px"
-		height="24px"
 		viewBox="0 0 24 24"
 		baseProfile="tiny"
 		xmlns="http://www.w3.org/2000/svg"

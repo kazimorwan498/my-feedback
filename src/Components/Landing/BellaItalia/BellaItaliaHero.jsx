@@ -14,25 +14,25 @@ export default function BellaItaliaHero() {
 	];
 
 	return (
-		<section className="px-2 sm:px-8 md:px-[97px] pt-8 sm:pt-[67px] pb-12 sm:pb-28 bg-[url('/bellaItalia-bg.png')]">
+		<section className="px-2 sm:px-8 md:px-[97px] pt-8 sm:pt-[67px] pb-16 sm:pb-28 bg-[url('/bellaItalia-bg.png')]">
 			<Heading className="text-white">Bella italia</Heading>
-			<div className="mt-3.5 flex items-center gap-[9px]">
+			<div className="mt-2 sm:mt-3.5 flex items-center gap-[9px]">
 				<div className="flex gap-[6.05px]">
 					{Array.from(Array(5).keys()).map((i) => (
 						<img
-							className="size-5 sm:size-[26px]"
+							className="size-4 sm:size-[26px]"
 							key={i}
 							src="/star.svg"
 							alt="Star"
 						/>
 					))}
 				</div>
-				<span class="text-sm font-semibold text-white text-[19px]">
+				<span class="text-xs font-semibold text-white text-[19px]">
 					5.0 <span class="font-light">(876 reviews)</span>
 				</span>
 			</div>
 
-			<p className="max-w-[528px] text-white font-light mt-[28px] text-sm sm:text-[19px] leading-tight">
+			<p className="max-w-[528px] text-white font-light mt-4 sm:mt-[28px] text-xs sm:text-sm md:text-[19px] leading-tight sm:leading-snug">
 				The lorem ipsum is, in printing, a series of meaningless words
 				used temporarily to calibrate a layout.
 				<br />
@@ -40,13 +40,15 @@ export default function BellaItaliaHero() {
 				used temporarily to calibrate a layout.
 			</p>
 
-			<div className="mt-12 sm:mt-[66px] space-y-6 sm:space-y-[37px]">
+			<div className="mt-5 sm:mt-10 md:mt-[66px] space-y-4 md:space-y-[37px]">
 				{BellaData.map(({ icon, des }, i) => (
 					<div
 						key={i}
-						className="flex items-center gap-2.5 text-white sm:text-[19px]"
+						className="flex items-center gap-1.5 sm:gap-2.5 text-white text-xs sm:text-sm md:text-[19px]"
 					>
-						<span>{icon}</span>
+						<span className="size-4 sm:size-5 md:size-6 object-contain">
+							{icon}
+						</span>
 						<span>{des}</span>
 					</div>
 				))}
