@@ -5,6 +5,7 @@ import Error from "./Components/Global/Error";
 import Hero from "./Components/Landing/HomePage/Hero";
 import Restaurants from "./Components/Landing/Restaurants/Restaurants";
 import BellaItalia from "./Components/Landing/BellaItalia/BellaItalia";
+import Footer from "./Components/Shared/Footer";
 
 function App() {
 	return (
@@ -16,6 +17,7 @@ function App() {
 				<Route path="/bellaItalia" element={<BellaItalia />} />
 				<Route path="*" element={<Error />} />
 			</Routes>
+			<Footer />
 		</BrowserRouter>
 	);
 }

@@ -3,6 +3,7 @@ import ActivitiesCardsData from "../../../../lib/db/ActivitiesCardsData.json";
 import { Arrow } from "../../../Global/Icons";
 import ArrowButton from "../../../Global/ArrowButton";
 import { useState } from "react";
+import FiveStar from "../../../Global/FiveStar";
 
 export default function ActivitiesCards() {
 	const [CurrentPosition, setCurrentPosition] = useState(0);
@@ -56,14 +57,11 @@ export default function ActivitiesCards() {
 
 						<div className="flex items-center gap-3 mb-5">
 							<div className="flex gap-[6.21px]">
-								{Array.from(Array(5).keys()).map((i) => (
-									<img
-										className="size-3.5 sm:size-[18.63px]"
-										key={i}
-										src="/star.svg"
-										alt="Star"
-									/>
-								))}
+								<FiveStar
+									className="gap-[6.21px]"
+									star="size-3.5 sm:size-[18.63px]"
+									i={5}
+								/>
 							</div>
 							<span className="text-[rgb(52,52,52)] text-xs sm:text-[14.5px]">
 								{date}

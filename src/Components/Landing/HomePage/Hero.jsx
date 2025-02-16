@@ -1,4 +1,3 @@
-import Footer from "../../Shared/Footer";
 import Activities from "./Activities/Activities";
 import Explore from "./Explore";
 import Filter from "./Filter";
@@ -15,7 +14,6 @@ export default function Hero() {
 			</main>
 			<Explore />
 			<Activities />
-			<Footer />
 		</>
 	);
 }

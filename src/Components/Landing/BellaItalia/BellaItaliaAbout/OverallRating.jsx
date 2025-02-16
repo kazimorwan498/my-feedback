@@ -1,5 +1,5 @@
-import FiveStar from "../../Global/FiveStar";
-import Heading from "../../Global/Heading";
+import FiveStar from "../../../Global/FiveStar";
+import Heading from "../../../Global/Heading";
 
 export default function OverallRating() {
 	const OverallRatingData = [
