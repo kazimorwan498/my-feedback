@@ -1,0 +1,20 @@
+[
+    {
+        "img": "/restaurant9.png",
+        "title": "The melt",
+        "rate": "3.5",
+        "reviews": "334"
+    },
+    {
+        "img": "/restaurant10.png",
+        "title": "Lokma",
+        "rate": "5.0",
+        "reviews": "253"
+    },
+    {
+        "img": "/restaurant11.png",
+        "title": "The snug",
+        "rate": "4.5",
+        "reviews": "654"
+    }
+]

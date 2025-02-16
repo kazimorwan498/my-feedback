@@ -9,7 +9,7 @@ export default function Footer() {
 	const currentMonth = new Date().toLocaleString("en-US", { month: "long" });
 
 	return (
-		<footer className="max-w-[1440px] mx-auto px-2 pt-[26px] pb-[27px]">
+		<footer className="max-w-[1440px] mx-auto px-2 pt-[26px] pb-[27px] border-b border-[rgb(220,220,220)]">
 			<ul className="flex flex-col min-[486px]:flex-row justify-between gap-x-5 gap-y-8 max-w-[810px] mx-auto mb-[66px]">
 				{FooterItems.map(({ title, items }, i) => (
 					<div key={i}>
