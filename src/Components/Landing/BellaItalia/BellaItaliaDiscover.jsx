@@ -8,8 +8,9 @@ export default function BellaItaliaDiscover() {
 			<Heading>Also discover...</Heading>
 			<div className="flex flex-wrap gap-[49px] items-center justify-center sm:justify-start max-w-[1055px] mt-[45px] mb-[77px]">
 				{BellaItaliaDiscoverCardsData.map(
-					({ img, title, rate, reviews }) => (
+					({ img, title, rate, reviews }, i) => (
 						<HeroCards
+							key={i}
 							img={img}
 							title={title}
 							des="The lorem ipsum is, in printing, a series of meaningless words used temporarily to calibrate a layout."

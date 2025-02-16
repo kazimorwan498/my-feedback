@@ -19,7 +19,7 @@ export default function Filter() {
 		<div className="pt-[37px] pb-10 sm:pb-[70px] flex flex-col gap-5">
 			<div
 				className={cn(
-					"flex items-center flex-wrap gap-x-7 sm:gap-x-5 md:gap-x-10 lg:gap-x-[56px] gap-y-5 sm:gap-y-10 justify-center h-[345px] min-[618px]:h-auto overflow-hidden transition-all delay-200",
+					"flex items-center flex-wrap gap-x-7 sm:gap-x-5 md:gap-x-10 lg:gap-x-[56px] gap-y-5 sm:gap-y-10 justify-center h-[345px] min-[618px]:h-auto overflow-hidden transition-all delay-100",
 					SeeAll
 						? "max-[355px]:h-[345px] min-[355px]:h-[291px] min-[558px]:h-[160px]"
 						: "h-[70px] xl:h-[80px]"

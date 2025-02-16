@@ -51,7 +51,7 @@ export default function FilterButton() {
 			>
 				<DropdownItem
 					isDisabled="true"
-					className="!bg-transparent text-center opacity-100 *:!h-[26px] *:!text-[22px] *:!font-bold"
+					className="!bg-transparent text-center opacity-100 *:!h-[26px] *:!text-[22px] *:!font-bold mb-2"
 				>
 					filter by rating
 				</DropdownItem>

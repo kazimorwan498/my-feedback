@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
 	Navbar,
 	NavbarBrand,
@@ -8,14 +8,22 @@ import {
 	NavbarContent,
 	NavbarItem,
 	Button,
+	cn,
 } from "@heroui/react";
-import { Globe, Logo, Search } from "../Global/Icons";
+import { Close, Globe, Logo, Search } from "../Global/Icons";
 import { Link, useNavigate } from "react-router-dom";
 import MyButtons from "../Global/MyButtons";
 import MobileNavMenuItems from "../../lib/db/MobileNavMenuItems.json";
 
 export default function MyNavbar() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
+	const [isSearchFocus, setIsSearchFocus] = useState(false);
+
+	useEffect(() => {
+		isSearchFocus
+			? document.body.classList.add("overflow-hidden")
+			: document.body.classList.remove("overflow-hidden");
+	}, [isSearchFocus]);
 
 	const Navigate = useNavigate();
 
@@ -46,19 +54,40 @@ export default function MyNavbar() {
 			</NavbarContent>
 
 			<NavbarContent justify="center" className="grow max-w-[625px]">
-				<div className="h-[51px] w-auto lg:w-[496px] 1160px:w-[625px] hidden lg:flex items-center justify-center gap-2 p-1 py-4 rounded-full border border-accent focus-within:border-primary text-base font-light">
+				{isSearchFocus && (
+					<div
+						className="absolute -top-10 left-0 h-[110vh] w-full bg-[rgba(16,16,16,0.2)]"
+						onClick={() => setIsSearchFocus(false)}
+					/>
+				)}
+
+				<div
+					className={cn(
+						"h-[51px] w-auto lg:w-[496px] 1160px:w-[625px] hidden lg:flex items-center justify-center gap-2 p-1 py-4 rounded-full border border-accent focus-within:border-primary text-base font-light relative z-10",
+						isSearchFocus && "bg-white"
+					)}
+				>
 					<input
 						type="search"
 						placeholder="restaurant, hotel, service...."
 						className="size-full bg-transparent px-[19px] text-searchText placeholder:text-searchText outline-0 rounded-tl-full rounded-bl-full border-r border-searchText"
+						onFocus={() => setIsSearchFocus(true)}
 					/>
 					<input
 						type="search"
 						placeholder="Singapore..."
 						className="size-full bg-transparent px-[19px] text-searchText placeholder:text-searchText outline-0 rounded-tr-full rounded-br-full"
+						onFocus={() => setIsSearchFocus(true)}
 					/>
-					<Button className="!size-[43px] !p-0 min-w-[43px] rounded-full bg-primary text-white">
-						<Search className="size-4 stroke-2" />
+					<Button
+						className="!size-[43px] !p-0 min-w-[43px] rounded-full bg-primary text-white"
+						onPress={() => setIsSearchFocus(false)}
+					>
+						{isSearchFocus ? (
+							<Close />
+						) : (
+							<Search className="size-5 stroke-2" />
+						)}
 					</Button>
 				</div>
 			</NavbarContent>
