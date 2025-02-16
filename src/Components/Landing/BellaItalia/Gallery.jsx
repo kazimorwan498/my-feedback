@@ -31,8 +31,8 @@ export default function Gallery() {
 
 				<div className="sm:absolute left-7 bottom-5 mt-4 sm:mt-0">
 					<MyButtons className="sm:bg-white sm:text-[rgb(35,35,35)] text-sm sm:text-[17px] font-medium px-4 sm:px-7">
-						<Grid3Icon className="size-3.5 sm:size-4" /> View all
-						photos (7)
+						<Grid3Icon className="size-3.5 sm:size-4" />
+						View all photos (7)
 					</MyButtons>
 				</div>
 			</div>

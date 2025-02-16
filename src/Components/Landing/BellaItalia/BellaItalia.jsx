@@ -1,4 +1,5 @@
 import MyBreadcrumbs from "../../Global/MyBreadcrumbs";
+import BellaItaliaAbout from "./BellaItaliaAbout";
 import BellaItaliaHero from "./BellaItaliaHero";
 import Gallery from "./Gallery";
 
@@ -14,6 +15,7 @@ export default function BellaItalia() {
 				<BellaItaliaHero />
 				<section className="px-2 sm:px-8 md:px-[97px]">
 					<Gallery />
+					<BellaItaliaAbout />
 				</section>
 			</section>
 		</>
